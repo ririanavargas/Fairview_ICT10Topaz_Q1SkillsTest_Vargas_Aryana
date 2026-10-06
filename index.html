@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ICT Skills Test</title>
+
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        body {
+            background-color: #e6cafd;
+            font-family: Arial, sans-serif;
+        }
+
+        .main-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: rgb(229, 174, 255);
+            border: 3px solid #d4a6ff;
+        }
+
+        .btn {
+            background-color: #d7a4ff;
+            border: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #d294ff;
+        }
+
+        #output {
+            background-color: #e9c4ff;
+            border: 2px solid #dc8cfe;
+            padding: 15px;
+            text-align: center;
+            color: #cc91ff;
+        }
+
+    </style>
+</head>
+
+
+
+            <a class="navbar-brand" href="index.html">
+                Ary's Bakery Bread
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mynavbar">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="mynavbar">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            SKU Generator
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index2.html">
+                            Receipt Generator
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!-- Main Content -->
+    <div class="main-container p-4 mt-5">
+
+        <h1 class="text-center">Receipt Generator</h1>
+
+        <h3>Menu:</h3>
+
+        <form>
+
+            <div class="mb-2">
+                <input
+                    type="checkbox"
+                    name="item1"
+                    id="item1"
+                    value="80"
+                    class="form-check-input"
+                    required>
+
+                <label for="item1">
+                    Baguette - ₱80
+                </label>
+            </div>
+
+
+            <div class="mb-2">
+                <input
+                    type="checkbox"
+                    name="item2"
+                    id="item2"
+                    value="150"
+                    class="form-check-input"
+                    required>
+
+                <label for="item2">
+                     Sourdough- ₱150
+                </label>
+            </div>
+
+
+            <div class="mb-2">
+                <input
+                    type="checkbox"
+                    name="item3"
+                    id="item3"
+                    value="100"
+                    class="form-check-input"
+                    required>
+
+                <label for="item3">
+                  Ciabatta - ₱100
+                </label>
+            </div>
+
+
+            <div class="mb-2">
+                <input
+                    type="checkbox"
+                    name="item4"
+                    id="item4"
+                    value="155"
+                    class="form-check-input"
+                    required>
+
+                <label for="item4">
+                    Focaccia - ₱155
+                </label>
+            </div>
+
+
+            <div class="mb-2">
+                <input
+                    type="checkbox"
+                    name="item5"
+                    id="item5"
+                    value="160"
+                    class="form-check-input"
+                    required>
+
+                <label for="item5">
+                    Brioche - ₱160
+                </label>
+            </div>
+
+
+            <br>
+
+            <button
+                class="btn w-100"
+                type="button"
+                py-click="createorder">
+
+                Place Order
+
+            </button>
+
+        </form>
+
+
+        <br>
+
+        <div id="output">
+            Your receipt will appear here.
+        </div>
+
+    </div>
+
+
+    <!-- PyScript Python File -->
+    <script type="py" src="main.py"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+```
